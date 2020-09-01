@@ -53,4 +53,7 @@ class Utils {
         }
     }
 
+    public static ArrayList<Training> getTrainings() {
+        return trainings;
+    }
 }
