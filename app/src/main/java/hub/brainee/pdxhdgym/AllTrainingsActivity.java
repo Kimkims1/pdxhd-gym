@@ -6,7 +6,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import java.util.ArrayList;
+
 import hub.brainee.pdxhdgym.adapters.TrainingAdapter;
+import hub.brainee.pdxhdgym.models.Training;
 
 public class AllTrainingsActivity extends AppCompatActivity {
 
@@ -22,6 +25,8 @@ public class AllTrainingsActivity extends AppCompatActivity {
         adapter = new TrainingAdapter(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new GridLayoutManager(this,2));
+
+        ArrayList<Training> allTrainings = Utils.getTrainings();
 
     }
 }
