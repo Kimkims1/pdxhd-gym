@@ -6,13 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnPlan"
+        android:layout_width="200sp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="See Your Plans"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 
+    <Button
+        android:id="@+id/btnActivities"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="See All Your Activities"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnPlan"
+        app:layout_constraintHorizontal_bias="0.622"
+        app:layout_constraintStart_toStartOf="@+id/btnPlan"
+        tools:layout_editor_absoluteY="412dp" />
+
+    <Button
+        android:id="@+id/btnAbtUs"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        app:layout_constraintEnd_toEndOf="@+id/btnActivities"
+        app:layout_constraintStart_toStartOf="@+id/btnActivities"
+        tools:layout_editor_absoluteY="479dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
